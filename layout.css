@@ -1,0 +1,177 @@
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.otsikko{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid black 1px;
+    padding: 10px;
+}
+
+.text-muted{
+    font-size: 1rem;
+}
+
+.blog-header-logo{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.carousel{
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators li{
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item{
+    height: 32rem;
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+    text-align: center;
+}
+
+.carousel .btn-primary{
+    background-color: #99c1de;;
+    border-color:  #fff;
+}
+
+.circles{
+    display: flex;
+    text-align: center;
+}
+
+.circles h2{
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.circles p{
+    font-size: 1.3rem;
+}
+
+.py-5 img{
+    border-radius: 20px;
+}
+
+
+/* mobiilisäännöt */
+@media only screen and (max-width: 425px)
+{
+
+.container{
+    width: 100%;
+}
+
+.otsikko{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.otsikko > *{
+    flex-grow: 1;
+    flex-basis: 100%;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.blog-header-logo{
+    text-align: center;
+    padding: 5px;
+    font-size: 2.5rem;
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+
+#myCarousel{
+    display: none;
+}
+
+.col-lg-4{
+    padding-bottom: 15px;
+}
+
+.circles{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container-2{
+    display: none;
+}
+}
+
+
+
